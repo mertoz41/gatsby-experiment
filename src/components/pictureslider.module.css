@@ -1,0 +1,9 @@
+.slider{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+div.slider > img{
+    width: 30px;
+}
