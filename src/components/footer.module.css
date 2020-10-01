@@ -2,8 +2,9 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 60px;
+    height: 130px;
     line-height: 60px;
-    background-color: blue;
+    background-color: navy;
     text-align: center;
+    
 }

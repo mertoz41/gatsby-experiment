@@ -1,0 +1,14 @@
+.singleCard{
+    position: relative;
+    float: left;
+    margin-left: 120px; margin-top: 80px; margin-right: 120px; margin-bottom: -5px;
+    width: 39px;
+    text-align: center;
+
+}
+
+.singleCard img{
+    width: 100%;
+    height: auto;
+
+}

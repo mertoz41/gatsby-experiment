@@ -1,0 +1,9 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background-color: olive;
+    overflow: auto;
+    box-shadow: 5px 10px 18px #888888;
+
+}
+
