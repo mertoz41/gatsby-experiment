@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Granitesect from '../components/granitesect'
+import { Tab } from 'semantic-ui-react'
+import stoneStyle from './stones.module.css'
 
 
 
@@ -20,9 +22,11 @@ class Stones extends Component {
     }
     render() {
     
+    
         return (
             <div>
                 <Header />
+                
                 <Granitesect list={this.state.list}/>
             
 
