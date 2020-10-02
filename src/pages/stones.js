@@ -4,21 +4,27 @@ import Footer from '../components/footer'
 import Granitesect from '../components/granitesect'
 import { Tab } from 'semantic-ui-react'
 import stoneStyle from './stones.module.css'
+import Stonetabs from '../components/stonetabs'
 
 
 
 
 class Stones extends Component {
     state = {
-        list: []
+        list: [],
+        showing: "granite"
     }
+
     componentDidMount(){
         let granites = require('../granitelist')
         this.setState({list: granites})
     }
 
-    changeMenuItem = () => {
-        debugger 
+    changeMenuItem = (event) => {
+        this.setState({
+            showing: event
+        })
+         
     }
     render() {
     
@@ -26,8 +32,13 @@ class Stones extends Component {
         return (
             <div>
                 <Header />
-                
+                <Stonetabs changeMenuItem={this.changeMenuItem} />
+                {this.state.showing == "granite" ?
                 <Granitesect list={this.state.list}/>
+                :
+                null
+                }
+                
             
 
                 {/* {this.state.list.map(granite => {
