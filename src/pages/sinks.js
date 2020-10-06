@@ -1,27 +1,24 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Image from 'react-bootstrap/Image'
-import { Row, Col } from 'react-bootstrap'
+import stoneStyle from './stones.module.css'
 
-const Sinks = () => (
-    <div>
-        <Header /> 
-        <Row>
-            <Col xs={6} md={4}>
-                <Image src="holder.js/171x180" rounded />
-            </Col>
-            <Col xs={6} md={4}>
-                <Image src="holder.js/171x180" roundedCircle />
-            </Col>
-            <Col xs={6} md={4}>
-                <Image src="holder.js/171x180" thumbnail />
-            </Col>
-        </Row>
 
-        sinks page experimenting
-        <Footer />
-    </div>
-)
+class Sinks extends Component { 
+    render(){
+
+        return(
+            <div>
+                <Header /> 
+                <Image className={stoneStyle.pic} src={require('../images/sink-stone.jpg')} style={{width: 1500}}/>
+                <div className={stoneStyle.writing}>
+                    <h1>Sinks</h1>
+                </div>
+                <Footer />
+            </div>
+    )
+} 
+}
 
 export default Sinks

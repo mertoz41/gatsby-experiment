@@ -41,7 +41,7 @@ class Stones extends Component {
         return (
             <div>
                 <Header />
-                <Image className={stoneStyle.pic} src={require('../images/sink-stone.jpg')} style={{width: 1500}}/>
+                <Image className={stoneStyle.pic} src={require('../images/artstone-stone.jpg')} style={{width: 1500}}/>
                 <div className={stoneStyle.writing}>
                 <h1>Stones</h1>
                 </div>
@@ -70,7 +70,7 @@ class Stones extends Component {
                     )
                 })} */}
 
-                {/* <Footer /> */}
+                <Footer />
             </div>
         )
     }

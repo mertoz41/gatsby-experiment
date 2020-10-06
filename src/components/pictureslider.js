@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel'
 import sliderStyles from './pictureslider.module.css'
 import artstonepic from '../images/theartstone.jpg'
 import artstonetwo from '../images/theartstonetwo.jpg'
-import artstonethree from '../images/theartstonethree.jpg'
+import artstonethree from '../images/artstone-third.jpg'
 
 const PictureSlider = () =>(
     <div className={sliderStyles.slider}>
