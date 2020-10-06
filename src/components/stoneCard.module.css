@@ -3,9 +3,10 @@
     list-style: none;
     width: 20%;
     height: 300px;
-    margin: 10px 10px 0px 40px;
+    margin: 40px 40px 0px 60px;
     text-align: center;
     padding: 1px;
+
 }
 .singleCard:hover{
     opacity: 0.9;
@@ -13,6 +14,6 @@
 
 .singleCard img{
     width: 100%;
-    height: auto;
+    height: 220px;
 
 }

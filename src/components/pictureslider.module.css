@@ -1,7 +1,9 @@
 .slider{
     position: relative;
+    top: 30px;
     margin: auto;
-    width: 1300px;
+    width: auto;
+    height: auto;
     box-shadow: 5px 10px 18px #888888;
 
 }

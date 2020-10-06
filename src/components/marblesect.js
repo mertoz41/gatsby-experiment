@@ -2,13 +2,13 @@ import React, { Component } from 'react'
 import StoneCard from '../components/stoneCard'
 import graniteStyles from './granitesect.module.css'
 
-export class Granitesect extends Component {
+export class Marblesect extends Component {
     render() {
         return (
             <div className={graniteStyles.container}>
-                {this.props.list.map(granite => {
+                {this.props.list.map(marble => {
                     return(
-                        <StoneCard location="granitepics" name={granite}/>
+                        <StoneCard location="marblepics" name={marble}/>
                     )
                 })}
                 
@@ -17,4 +17,4 @@ export class Granitesect extends Component {
     }
 }
 
-export default Granitesect
+export default Marblesect

@@ -10,24 +10,14 @@ const PictureSlider = () =>(
         <Carousel>
             <Carousel.Item>
                 <img className="d-block w-100" src={artstonepic} alt="First slide" style={{maxWidth: '100%', objectFit: 'cover'}}/>
-                <Carousel.Caption>
-                    <h3>Granite</h3>
-                    <p>What is granite</p>
-                </Carousel.Caption>
+               
             </Carousel.Item>
             <Carousel.Item>
                 <img className="d-block w-100" src={artstonetwo} alt="Third slide" style={{maxWidth: '100%', objectFit: 'cover'}}/>
-                <Carousel.Caption>
-                    <h3>Marble</h3>
-                    <p>What is Marble?</p>
-                </Carousel.Caption>
+        
             </Carousel.Item>
             <Carousel.Item>
                 <img className="d-block w-100" src={artstonethree} alt="Third slide" style={{maxWidth: '100%', objectFit: 'cover'}}/>
-                <Carousel.Caption>
-                    <h3>Quartz</h3>
-                    <p>What is quartz?</p>
-                </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
     </div>

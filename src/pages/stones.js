@@ -2,22 +2,31 @@ import React, { Component } from 'react'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Granitesect from '../components/granitesect'
-import { Tab } from 'semantic-ui-react'
 import stoneStyle from './stones.module.css'
 import Stonetabs from '../components/stonetabs'
+import Image from 'react-bootstrap/Image'
+import Marblesect from '../components/marblesect'
+import Quartzsect from '../components/quartzsect'
 
 
 
 
 class Stones extends Component {
     state = {
-        list: [],
+        graniteList: [],
+        marbleList: [],
         showing: "granite"
     }
 
     componentDidMount(){
         let granites = require('../granitelist')
-        this.setState({list: granites})
+        let marbles = require('../marblelist')
+        let quartz = require('../quartzlist')
+        this.setState({
+            graniteList: granites,
+            marbleList: marbles,
+            quartzList: quartz
+        })
     }
 
     changeMenuItem = (event) => {
@@ -32,10 +41,24 @@ class Stones extends Component {
         return (
             <div>
                 <Header />
+                <Image className={stoneStyle.pic} src={require('../images/sink-stone.jpg')} style={{width: 1500}}/>
+                <div className={stoneStyle.writing}>
+                <h1>Stones</h1>
+                </div>
                 <Stonetabs changeMenuItem={this.changeMenuItem} />
                 {this.state.showing == "granite" ?
-                <Granitesect list={this.state.list}/>
+                <Granitesect list={this.state.graniteList}/>
                 :
+                null
+                }
+                {this.state.showing == "marble" ?
+                <Marblesect list={this.state.marbleList} />
+                :
+                null
+                }
+                {this.state.showing == "quartz" ?
+                <Quartzsect list={this.state.quartzList} />
+                : 
                 null
                 }
                 
@@ -47,7 +70,7 @@ class Stones extends Component {
                     )
                 })} */}
 
-                <Footer />
+                {/* <Footer /> */}
             </div>
         )
     }

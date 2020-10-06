@@ -1,9 +1,12 @@
 .container {
+    position: relative;
     width: 65%;
     height: 850px;
     overflow: hidden;
     overflow-y: scroll;
-    background-color: blue ;
+    top: 30px;
+    background-color: lightgray ;
+    border-radius: 10px;
     margin: 20px auto;
     padding: 20px 0px;
 

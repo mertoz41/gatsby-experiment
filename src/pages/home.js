@@ -10,7 +10,7 @@ const Home = () => (
     <div className={homeStyles.container}>
         <Header />
         <PictureSlider />
-        <Footer /> 
+        {/* <Footer />  */}
     </div>
 )
 

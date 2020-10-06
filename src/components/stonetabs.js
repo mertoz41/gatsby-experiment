@@ -12,7 +12,7 @@ export class Stonetabs extends Component {
                     <Button onClick={() => this.props.changeMenuItem("marble")}>Marble</Button>
                     <Button onClick={() => this.props.changeMenuItem("quartz")}>Quartz</Button>
                 </Button.Group>
-                
+          
                 
             </div>
         )
