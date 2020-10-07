@@ -6,7 +6,12 @@ import artstonetwo from '../images/theartstonetwo.jpg'
 import artstonethree from '../images/artstone-third.jpg'
 
 const PictureSlider = () =>(
-    <div className={sliderStyles.slider}>
+    <div >
+        <div className={sliderStyles.artstone}>
+            <img src={require('../images/artstonelogo.png')} style={{width: '200px', height: '200px'}}/>
+        </div>
+
+        <div className={sliderStyles.slider}>
         <Carousel>
             <Carousel.Item>
                 <img className="d-block w-100" src={artstonepic} alt="First slide" style={{maxWidth: '100%', objectFit: 'cover'}}/>
@@ -20,6 +25,7 @@ const PictureSlider = () =>(
                 <img className="d-block w-100" src={artstonethree} alt="Third slide" style={{maxWidth: '100%', objectFit: 'cover'}}/>
             </Carousel.Item>
         </Carousel>
+        </div>
     </div>
 )
 
