@@ -1,12 +1,10 @@
 import React, { Component } from 'react'
 import Header from '../components/header'
 import Footer from '../components/footer'
-import Granitesect from '../components/granitesect'
+import Cardsect from '../components/cardsect'
 import stoneStyle from './stones.module.css'
 import Stonetabs from '../components/stonetabs'
 import Image from 'react-bootstrap/Image'
-import Marblesect from '../components/marblesect'
-import Quartzsect from '../components/quartzsect'
 
 
 
@@ -47,17 +45,17 @@ class Stones extends Component {
                 </div>
                 <Stonetabs changeMenuItem={this.changeMenuItem} />
                 {this.state.showing == "granite" ?
-                <Granitesect list={this.state.graniteList}/>
+                <Cardsect location="granitepics" list={this.state.graniteList}/>
                 :
                 null
                 }
                 {this.state.showing == "marble" ?
-                <Marblesect list={this.state.marbleList} />
+                <Cardsect location="marblepics" list={this.state.marbleList} />
                 :
                 null
                 }
                 {this.state.showing == "quartz" ?
-                <Quartzsect list={this.state.quartzList} />
+                <Cardsect location="quartzpics" list={this.state.quartzList} />
                 : 
                 null
                 }
