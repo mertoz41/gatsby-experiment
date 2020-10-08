@@ -1,6 +1,6 @@
 module.exports =[
-    "BR-201ADA",
-    "BR-1613ADA",
-    "BR-2318ADA",
-    "BR-3117ADA"
+    "as-201ada",
+    "as-1613ada",
+    "as-2318ada",
+    "as-3117ada"
 ]

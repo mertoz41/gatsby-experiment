@@ -1,12 +1,12 @@
 module.exports =[
-    "BR-HM1518",
-    "BR-HM2318",
-    "BR-HM2718",
-    "BR-HM3018",
-    "BR-HM3117",
-    "BR-HM3120",
-    "BR-HM3120R",
-    "BR-HM3121",
-    "BR-HM3121R",
-    "BR-HM3218"
+    "as-hm1518",
+    "as-hm2318",
+    "as-hm2718",
+    "as-hm3018",
+    "as-hm3117",
+    "as-hm3120",
+    "as-hm3120r",
+    "as-hm3121",
+    "as-hm3121r",
+    "as-hm3218"
 ]

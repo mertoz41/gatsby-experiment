@@ -8,7 +8,7 @@ import artstonethree from '../images/artstone-third.jpg'
 const PictureSlider = () =>(
     <div >
         <div className={sliderStyles.artstone}>
-            <img src={require('../images/artstonelogo.png')} style={{width: '200px', height: '200px'}}/>
+            <img src={require('../images/artstonelogo.jpg')} style={{width: '200px', height: '200px'}}/>
         </div>
 
         <div className={sliderStyles.slider}>

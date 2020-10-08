@@ -12,7 +12,12 @@ export class Sinktabs extends Component {
 
     handleItemClick = (e, { name }) => {
     this.setState({ activeItem: name })
-    this.props.changeMenuItem(name)
+    debugger
+    if(name == "ADA compliant"){
+        this.props.changeMenuItem("ada compliant")
+    } else {
+        this.props.changeMenuItem(name)
+    }
     }
 
 
@@ -54,8 +59,8 @@ export class Sinktabs extends Component {
                         onClick={this.handleItemClick}
                         />
                         <Menu.Item
-                        name='ADA compliant '
-                        active={this.state.activeItem === 'ADA compliant '}
+                        name='ADA compliant'
+                        active={this.state.activeItem === 'ADA compliant'}
                         onClick={this.handleItemClick}
                         />
                         <Menu.Item

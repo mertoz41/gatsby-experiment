@@ -26,17 +26,33 @@ class StoneCard extends Component {
         return final 
     }
 
-    getPicture = (name, location) => {
-        let stoneName = name
-        let directory = location 
-        return require(`../${directory}/${stoneName}.png`)
+    getPicture = () => {
+        let sinkDirectories = [
+            "singlebowlpics",
+            "apronpics",
+            "barpics",
+            "compliantpics",
+            "doublebowlpics",
+            "duragranitpics",
+            "handmadepics",
+            "vanitypics"
+        ]
+        let stoneName = this.props.name
+        let directory = this.props.location
+        let fileType
+        if(sinkDirectories.includes(this.props.location)){
+            fileType = "jpg";
+        } else {
+            fileType = "png"
+        }
+        return require(`../${directory}/${stoneName}.${fileType}`)
          
     }
     render() {
         return (
             <div className={stoneStyles.singleCard}>
                 <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={this.getPicture(this.props.name, this.props.location)} style={{width: "100%"}}/>
+                    <Card.Img variant="top" src={this.getPicture()} style={{width: "100%"}}/>
                     <Card.Body>
                     <Card.Title>{this.nameDisplay(this.props.name)}</Card.Title> 
                     </Card.Body>
