@@ -9,7 +9,7 @@ const Footer = () => (
     <footer className={footerStyles.footer}>
         <div className="container">
             <span>
-                © Art Stone Marble & Granite 2020
+                <b>© Art Stone Marble & Granite 2020</b>
             </span>
         </div>
     </footer>

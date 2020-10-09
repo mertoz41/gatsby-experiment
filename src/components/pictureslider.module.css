@@ -1,10 +1,17 @@
 .artstone {
     position: absolute;
-    top: 47px;
-    left: 0px;
-    z-index: 1;
+    top: 0px;
+    width: 100%;   
+    right: 35px; 
+    text-align: center;
+    background-color: red;
+}
+.artstone img{
+    position: absolute;
 
 }
+
+
 .slider{
     position: relative;
     top: 0px;

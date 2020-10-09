@@ -4,12 +4,12 @@ import sliderStyles from './pictureslider.module.css'
 import artstonepic from '../images/theartstone.jpg'
 import artstonetwo from '../images/theartstonetwo.jpg'
 import artstonethree from '../images/artstone-third.jpg'
+import Artstone from '../components/artstone'
 
 const PictureSlider = () =>(
     <div >
-        <div className={sliderStyles.artstone}>
-            <img src={require('../images/artstonelogo.jpg')} style={{width: '200px', height: '200px'}}/>
-        </div>
+        <Artstone />
+      
 
         <div className={sliderStyles.slider}>
         <Carousel>
