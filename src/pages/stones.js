@@ -5,6 +5,7 @@ import Cardsect from '../components/cardsect'
 import stoneStyle from './stones.module.css'
 import Stonetabs from '../components/stonetabs'
 import Image from 'react-bootstrap/Image'
+import Artstone from '../components/artstone'
 
 
 
@@ -37,9 +38,10 @@ class Stones extends Component {
     
     
         return (
-            <div>
+            <div className={stoneStyle.container}>
                 <Header />
-                <Image className={stoneStyle.pic} src={require('../images/artstone-stone.jpg')} style={{width: 1500}}/>
+                <Artstone /> 
+                <Image className={stoneStyle.pic} src={require('../images/artstone-stone.jpg')}/>
                 <div className={stoneStyle.writing}>
                 <h1>Stones</h1>
                 </div>

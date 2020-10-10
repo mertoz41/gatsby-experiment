@@ -3,6 +3,7 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 import Image from 'react-bootstrap/Image'
 import stoneStyle from './stones.module.css'
+import Artstone from '../components/artstone'
 
 
 
@@ -11,7 +12,8 @@ class AboutPage extends Component {
         return (
             <div>
                 <Header /> 
-                <Image className={stoneStyle.pic} src={require('../images/artstone-fourth.jpg')} style={{width: 1500}}/>
+                <Artstone />
+                <Image className={stoneStyle.pic} src={require('../images/artstone-fourth.jpg')}/>
                 <div className={stoneStyle.writing}>
                     <h1>About</h1>
                 </div>

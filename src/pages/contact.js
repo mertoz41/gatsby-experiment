@@ -4,6 +4,7 @@ import Footer from '../components/footer'
 import stoneStyle from './stones.module.css'
 import Image from 'react-bootstrap/Image'
 import { List } from 'semantic-ui-react'
+import Artstone from '../components/artstone'
 
 
 
@@ -11,7 +12,8 @@ import { List } from 'semantic-ui-react'
 const Contact = () => (
     <div>
         <Header />
-        <Image className={stoneStyle.pic} src={require('../images/artstone-fifth.jpg')} style={{width: 1500}}/>
+        <Artstone />
+        <Image className={stoneStyle.pic} src={require('../images/artstone-fifth.jpg')}/>
         <div className={stoneStyle.writing}>
             <h1>Contact</h1>
         </div>

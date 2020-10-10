@@ -5,6 +5,7 @@ import Image from 'react-bootstrap/Image'
 import stoneStyle from './stones.module.css'
 import Sinktabs from '../components/sinktabs'
 import Cardsect from '../components/cardsect'
+import Artstone from '../components/artstone'
 
 
 class Sinks extends Component {
@@ -41,9 +42,13 @@ class Sinks extends Component {
         return(
             <div>
                 <Header /> 
-                <Image className={stoneStyle.pic} src={require('../images/sink-stone.jpg')} style={{width: 1500}}/>
+                <Artstone />
+                <div className={stoneStyle.sect}>
+                <Image className={stoneStyle.pic} src={require('../images/sink-stone.jpg')}/>
                 <div className={stoneStyle.writing}>
                     <h1>Sinks</h1>
+                </div>
+
                 </div>
                 <Sinktabs changeMenuItem={this.changeMenuItem}/>
                 {this.state.showing == "single bowl" ?
