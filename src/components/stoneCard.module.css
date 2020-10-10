@@ -2,8 +2,8 @@
     float: left;
     list-style: none;
     width: 20%;
-    height: 300px;
-    margin: 40px 40px 0px 60px;
+    height: 40%;
+    margin: 40px 40px 0px 55px;
     text-align: center;
     padding: 1px;
 
@@ -13,7 +13,7 @@
 }
 
 .singleCard img{
-    width: 100%;
+    width: 30%;
     height: 220px;
 
 }

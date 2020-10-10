@@ -64,11 +64,11 @@
 }
 .contact{
     position: relative;
-    width: 450px;
     top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+   
     padding: 20px;
-    height: auto;
-    margin: auto;
     text-align: left;
     font-size: 20px;
 
