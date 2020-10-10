@@ -16,6 +16,11 @@
     box-shadow: 5px 10px 18px #888888;
 
 }
+.experiment{
+    position: relative;
+    width: auto;
+    margin: auto;
+}
 
 .writing {
     position: absolute;

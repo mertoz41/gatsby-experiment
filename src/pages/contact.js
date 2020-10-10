@@ -18,6 +18,9 @@ const Contact = () => (
             <h1>Contact</h1>
         </div>
         <div className={stoneStyle.aboutContainer}>
+            <div className={stoneStyle.experiment}>
+
+            
         
                     
                 <div className={stoneStyle.contact}>
@@ -34,6 +37,7 @@ const Contact = () => (
                 <img src={require('../images/artstonelogo.jpg')} />
                 
                 </div>
+            </div>
 
         <Footer /> 
     </div>
