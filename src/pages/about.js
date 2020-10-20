@@ -4,13 +4,15 @@ import Footer from '../components/footer'
 import Image from 'react-bootstrap/Image'
 import stoneStyle from './stones.module.css'
 import Artstone from '../components/artstone'
+import homeStyles from './home.module.css'
+
 
 
 
 class AboutPage extends Component {
     render() {
         return (
-            <div>
+            <div className={stoneStyle.container}>
                 <Header /> 
                 <Artstone />
                 <Image className={stoneStyle.pic} src={require('../images/artstone-fourth.jpg')}/>

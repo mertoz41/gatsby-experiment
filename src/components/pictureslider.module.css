@@ -1,13 +1,18 @@
+.container {
+    width: 100%;
+}
+
 .artstone {
     position: absolute;
     top: 0px;
-    width: 100%;   
-    right: 35px; 
+    width: 100%;
+    right: 30px;
     text-align: center;
-    background-color: red;
 }
 .artstone img{
     position: absolute;
+    
+    width: 46px;
 
 }
 
@@ -16,8 +21,9 @@
     position: relative;
     top: 0px;
     margin: auto;
-    width: auto;
+    width: 100%;
     height: auto;
+    margin-bottom: 40px;
     box-shadow: 5px 10px 18px #888888;
 
 }
@@ -27,3 +33,11 @@
     height: 810px;
 }
 
+@media only screen and (max-width: 375px) {
+    .artstone {
+        left: 50px;
+    }
+    .slider img{
+        width: 100%;
+    }
+}

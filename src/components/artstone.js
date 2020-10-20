@@ -7,7 +7,7 @@ export class Artstone extends Component {
         return (
             <div >
                 <div className={sliderStyles.artstone}>
-                <img src={require('../images/artstonelogo.jpg')} style={{width: '50px', height: '47px'}}/>
+                <img src={require('../images/artstonelogo.jpg')}/>
 
                 </div>
             </div>

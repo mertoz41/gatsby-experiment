@@ -4,10 +4,17 @@
     height: 850px;
     overflow: hidden;
     overflow-y: scroll;
-    top: 30px;
+    top: 40px;
     border: 5px black;
     border-radius: 10px;
     margin: 5% auto;
     padding: 20px 0px;
+
+}
+
+@media only screen and (max-width: 375px){
+    .container{
+        width: 100%;
+    }
 
 }

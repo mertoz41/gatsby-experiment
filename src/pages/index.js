@@ -7,7 +7,7 @@ import 'semantic-ui-css/semantic.min.css'
 
 
 const IndexPage = () => (
-  <div className={homeStyles.container}>
+  <div className={homeStyles.wrapper}>
         <Header />
         <PictureSlider />
         <Footer /> 

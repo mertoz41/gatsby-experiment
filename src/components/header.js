@@ -1,8 +1,12 @@
 import React from "react"
 import {Navbar, Nav, NavDropdown } from 'react-bootstrap'
+import headerStyles from './header.module.css'
 
 
 export default (props) => (
+  <div className={headerStyles.container}>
+
+  
   <Navbar bg="light" expand="lg">
   <Navbar.Brand href="/home">Art Stone Marble & Granite</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -19,4 +23,5 @@ export default (props) => (
     
   </Navbar.Collapse>
 </Navbar>
+</div>
 )

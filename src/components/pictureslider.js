@@ -7,7 +7,7 @@ import artstonethree from '../images/artstone-third.jpg'
 import Artstone from '../components/artstone'
 
 const PictureSlider = () =>(
-    <div >
+    <div className={sliderStyles.container}>
         <Artstone />
       
 

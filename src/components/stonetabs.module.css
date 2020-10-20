@@ -1,7 +1,68 @@
+.container{
+    position: relative;
+    top: 20px;
+    width: 100%;
+    /* background-color: orchid; */
+    margin: auto;
+    text-align: center;
+}
+.nuTabs {
+    position: relative;
+    width: 100%;
+    top: 20px;
+
+}
+.stoneTabs{
+    position: relative;
+    width: 100%;
+    top: 20px;
+}
+.stoneTabs h3{
+    display: inline;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+
+}
+.nuTabs h3{
+    display: inline;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+.space{
+    height: 30px;
+}
+.stoneTabs h3.active{
+    border-bottom-style: solid;
+    border-bottom-color: black;
+
+}
+.stoneTabs h3:hover{
+    color: grey;
+}
+
+
+.nuTabs h3.active{
+    border-bottom-style: solid;
+    border-bottom-color: black;
+
+}
+
+.nuTabs h3:hover{
+    color: grey;
+}
 .tab{
-    position: absolute;
-    top: 90%;
-    left: 10%;
-    /* box-shadow: 5px 2px 8px #888888; */
-    width: 500px;
+    color: black;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+}
+
+@media only screen and  (max-width: 375px) {
+  
+    .nuTabs h3{
+        font-size: 15px;
+
+    }
+
 }

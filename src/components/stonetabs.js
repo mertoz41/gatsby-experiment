@@ -10,7 +10,7 @@ export class Stonetabs extends Component {
     }
 
 
-    handleItemClick = (e, { name }) => {
+    handleItemClick = (name) => {
     this.setState({ activeItem: name })
     this.props.changeMenuItem(name)
     }
@@ -18,31 +18,15 @@ export class Stonetabs extends Component {
 
     render() {
         return (
-            <div className={tabStyles.tab} >
+            <div className={tabStyles.container} >
              
-             <Grid>
-                <Grid.Column width={4}>
-                    <Menu fluid vertical tabular>
-                        <Menu.Item
-                        name='granite'
-                        active={this.state.activeItem === 'granite'}
-                        onClick={this.handleItemClick}
-                        />
-                        <Menu.Item
-                        name='marble'
-                        active={this.state.activeItem === 'marble'}
-                        onClick={this.handleItemClick}
-                        />
-                        <Menu.Item
-                        name='quartz'
-                        active={this.state.activeItem === 'quartz'}
-                        onClick={this.handleItemClick}
-                        />
-                    </Menu>
-                </Grid.Column>
+           
+             <div className={tabStyles.stoneTabs}>
+                <h3 className={(this.state.activeItem === 'granite' ? tabStyles.active : tabStyles.tab)} onClick={() => this.handleItemClick('granite')}>Granite</h3>
+                <h3 className={(this.state.activeItem === 'marble' ? tabStyles.active : tabStyles.tab)} onClick={() => this.handleItemClick('marble')}>Marble</h3>
+                <h3 className={(this.state.activeItem === 'quartz' ? tabStyles.active : tabStyles.tab)} onClick={() => this.handleItemClick('quartz')}>Quartz</h3>
+            </div>
 
-    
-      </Grid>
                 
             </div>
         )
