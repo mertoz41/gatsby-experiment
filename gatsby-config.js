@@ -32,3 +32,12 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+
+// module.exports = {
+//   siteMetadata: {
+//     stones: {
+//      name: "yes"
+//   }
+// }
+  
+// }

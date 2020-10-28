@@ -14,6 +14,7 @@ class Stones extends Component {
     state = {
         graniteList: [],
         marbleList: [],
+        quartzList: [],
         showing: "granite"
     }
 

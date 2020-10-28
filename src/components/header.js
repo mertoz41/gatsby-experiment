@@ -17,6 +17,8 @@ export default (props) => (
         <NavDropdown.Item href="/stones">Stones</NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item href="/sinks">Sinks</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item href="/edges">Edges</NavDropdown.Item>
       </NavDropdown>
       <Nav.Link href="/contact">Contact</Nav.Link>
     </Nav>
