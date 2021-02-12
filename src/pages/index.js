@@ -11,7 +11,7 @@ const IndexPage = () => (
   <div className={homeStyles.wrapper}>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>The Art Stone</title>
+          <title>Art Stone Marble & Granite</title>
           {/* <link rel="canonical" href="http://mysite.com/example" /> */}
         </Helmet>
         <Header />
