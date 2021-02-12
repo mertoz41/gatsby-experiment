@@ -12,6 +12,7 @@ const IndexPage = () => (
         <Helmet>
           <meta charSet="utf-8" />
           <title>Art Stone Marble & Granite</title>
+          <meta name="description" content="Nested component" />
           {/* <link rel="canonical" href="http://mysite.com/example" /> */}
         </Helmet>
         <Header />
