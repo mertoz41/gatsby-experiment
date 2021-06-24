@@ -6,6 +6,8 @@ export class Cardsect extends Component {
     render() {
         return (
             <div className={sectionStyle.container}>
+                {/* <StoneCard location={this.props.location} name='artstone-fifth.jpg'/> */}
+
                 {this.props.list.map(granite => {
                     return(
                         <StoneCard location={this.props.location} name={granite}/>

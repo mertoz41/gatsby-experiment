@@ -42,7 +42,6 @@ class Sinks extends Component {
         return(
             <div>
                 <Header /> 
-                <Artstone />
                 <div className={stoneStyle.sect}>
                 <Image className={stoneStyle.pic} src={require('../images/sink-stone.jpg')}/>
                 <div className={stoneStyle.writing}>

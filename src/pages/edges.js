@@ -29,10 +29,11 @@ export class Edges extends Component {
         return (
             <div className={stoneStyle.container}>
                 <Header />
-                <Artstone /> 
-                <Image className={stoneStyle.pic} src={require('../images/artstone-stone.jpg')}/>
-                <div className={stoneStyle.writing}>
-                <h1>Edges</h1>
+                <div className={stoneStyle.sect}>
+                    <Image className={stoneStyle.pic} src={require('../images/artstone-stone.jpg')}/>
+                    <div className={stoneStyle.writing}>
+                    <h1>Edges</h1>
+                    </div>
                 </div>
                 <EdgeTabs changeMenuItem={this.changeMenuItem} />
                 {this.state.showing == "basic" ?

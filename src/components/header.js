@@ -1,16 +1,17 @@
 import React from "react"
-import {Navbar, Nav, NavDropdown } from 'react-bootstrap'
+import {Navbar, Nav, NavDropdown, Image } from 'react-bootstrap'
 import headerStyles from './header.module.css'
 
 
 export default (props) => (
-  <div className={headerStyles.container}>
 
   
   <Navbar bg="light" expand="lg">
-  <Navbar.Brand href="/home">Art Stone Marble & Granite</Navbar.Brand>
+  <Navbar.Brand href="/home"><Image src={require('../images/artstonelogo.jpg')} style={{height: 50, width: 50}}/> Art Stone Marble & Granite</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
+
+    
     <Nav className="mr-auto">
       <Nav.Link href="/about">About</Nav.Link>
       <NavDropdown title="Catalog" id="basic-nav-dropdown">
@@ -25,5 +26,4 @@ export default (props) => (
     
   </Navbar.Collapse>
 </Navbar>
-</div>
 )

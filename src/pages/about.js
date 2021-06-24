@@ -14,10 +14,11 @@ class AboutPage extends Component {
         return (
             <div className={stoneStyle.container}>
                 <Header /> 
-                <Artstone />
-                <Image className={stoneStyle.pic} src={require('../images/artstone-fourth.jpg')}/>
-                <div className={stoneStyle.writing}>
-                    <h1>About</h1>
+                <div className={stoneStyle.sect}>
+                    <Image className={stoneStyle.pic} src={require('../images/artstone-fourth.jpg')}/>
+                    <div className={stoneStyle.writing}>
+                        <h1>About</h1>
+                    </div>
                 </div>
                 <div className={stoneStyle.aboutContainer}>
                 <div className={stoneStyle.about}>

@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import Card from 'react-bootstrap/Card'
 import stoneStyles from './stoneCard.module.css'
-
-class StoneCard extends Component {
+import {graphql} from 'gatsby'
+//  {
+// 
+class StoneCard extends Component{
 
 
     nameDisplay = (name) =>{
@@ -27,6 +29,7 @@ class StoneCard extends Component {
     }
 
     getPicture = () => {
+        console.log('experimenting')
         let sinkDirectories = [
             "singlebowlpics",
             "apronpics",
@@ -48,11 +51,12 @@ class StoneCard extends Component {
         return require(`../${directory}/${stoneName}.${fileType}`)
          
     }
-    render() {
+    render(){
         return (
             <div className={stoneStyles.singleCard}>
                 <Card style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={this.getPicture()} style={{width: "100%"}}/>
+
                     <Card.Body>
                     <Card.Title>{this.nameDisplay(this.props.name)}</Card.Title> 
                     </Card.Body>
@@ -60,6 +64,8 @@ class StoneCard extends Component {
             </div>
         )
     }
+    
 }
 
 export default StoneCard
+

@@ -5,28 +5,36 @@ import artstonepic from '../images/theartstone.jpg'
 import artstonetwo from '../images/theartstonetwo.jpg'
 import artstonethree from '../images/artstone-third.jpg'
 import Artstone from '../components/artstone'
+import {Container, Image} from 'react-bootstrap'
 
 const PictureSlider = () =>(
-    <div className={sliderStyles.container}>
-        <Artstone />
+    <Container fluid>
+        {/* <Artstone /> */}
       
 
-        <div className={sliderStyles.slider}>
-        <Carousel>
+        {/* <div className={sliderStyles.slider}> */}
+        <Carousel fade>
             <Carousel.Item>
-                <img className="d-block w-100" src={artstonepic} alt="First slide" style={{maxWidth: '100%', objectFit: 'cover'}}/>
-               
+                <Image fluid style={{maxHeight: window.screen.height, width: '100%'}} src={artstonepic} alt="First slide" />
+                <Carousel.Caption>
+                    <h3>Experiment label</h3>
+                </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-                <img className="d-block w-100" src={artstonetwo} alt="Third slide" style={{maxWidth: '100%', objectFit: 'cover'}}/>
-        
+                <Image fluid style={{maxHeight: window.screen.height, width: '100%'}} src={artstonetwo} alt="Third slide" />
+                <Carousel.Caption>
+                    <h3>Experiment label</h3>
+                </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-                <img className="d-block w-100" src={artstonethree} alt="Third slide" style={{maxWidth: '100%', objectFit: 'cover'}}/>
+                <Image fluid style={{maxHeight: window.screen.height, width: '100%'}} src={artstonethree} alt="Third slide" />
+                <Carousel.Caption>
+                    <h3>Experiment label</h3>
+                </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
-        </div>
-    </div>
+        {/* </div> */}
+</Container>
 )
 
 export default PictureSlider

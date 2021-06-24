@@ -19,10 +19,11 @@ const Contact = () => (
           <meta name="description" content="Nested component" />
         </Helmet>
         <Header />
-        <Artstone />
-        <Image className={stoneStyle.pic} src={require('../images/artstone-fifth.jpg')}/>
-        <div className={stoneStyle.writing}>
-            <h1>Contact</h1>
+        <div className={stoneStyle.container}>
+            <Image className={stoneStyle.pic} src={require('../images/artstone-fifth.jpg')}/>
+            <div className={stoneStyle.writing}>
+                <h1>Contact</h1>
+            </div>
         </div>
         <div className={stoneStyle.aboutContainer}>
             <div className={stoneStyle.experiment}>

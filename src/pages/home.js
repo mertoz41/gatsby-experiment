@@ -4,11 +4,15 @@ import Header from '../components/header'
 import PictureSlider from '../components/pictureslider'
 import homeStyles from './home.module.css'
 import { Helmet } from 'react-helmet'
+import {Container} from 'react-bootstrap'
+
 
 
 
 const Home = () => (
-    <div className={homeStyles.container}>
+  <div className={homeStyles.container}>
+{/* <Container fluid> */}
+
         <Helmet>
           <meta charSet="utf-8" />
           <title>Art Stone Marble & Granite</title>
@@ -17,7 +21,8 @@ const Home = () => (
         <Header />
         <PictureSlider />
         <Footer /> 
-    </div>
+      {/* </Container>    */}
+  </div>     
 )
 
 export default Home 

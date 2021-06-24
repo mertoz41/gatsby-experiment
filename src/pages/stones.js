@@ -41,10 +41,11 @@ class Stones extends Component {
         return (
             <div className={stoneStyle.container}>
                 <Header />
-                <Artstone /> 
-                <Image className={stoneStyle.pic} src={require('../images/artstone-stone.jpg')}/>
-                <div className={stoneStyle.writing}>
-                <h1>Stones</h1>
+                <div className={stoneStyle.sect}>
+                    <Image className={stoneStyle.pic} src={require('../images/artstone-stone.jpg')}/>
+                    <div className={stoneStyle.writing}>
+                    <h1>Stones</h1>
+                    </div>
                 </div>
                 <Stonetabs changeMenuItem={this.changeMenuItem} />
                 {this.state.showing == "granite" ?
@@ -59,7 +60,7 @@ class Stones extends Component {
                 }
                 {this.state.showing == "quartz" ?
                 <Cardsect location="quartzpics" list={this.state.quartzList} />
-                : 
+                :
                 null
                 }
                 
