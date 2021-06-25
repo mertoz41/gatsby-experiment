@@ -11,7 +11,7 @@ import Image from 'react-bootstrap/Image'
 import { Container } from "react-bootstrap"
 
 const IndexPage = ({data}) => {
-  console.log(window.location.href)
+  // console.log(window.location.href)
   return(
     <div className={homeStyles.container}>
         <Helmet>

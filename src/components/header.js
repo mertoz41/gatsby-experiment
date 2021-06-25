@@ -1,9 +1,23 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 import {Navbar, Nav, NavDropdown, Image } from 'react-bootstrap'
 import headerStyles from './header.module.css'
 import {Link} from 'react-scroll'
 
-export default (props) => (
+export default (props) => {
+  const [home, setHome] = useState(true)
+
+  useEffect(() => {
+    let splitted = window.location.href.split('/')
+    if (splitted[3].length){
+      setHome(false)
+    }
+    // 4th element in splitted is how I can determine the path
+
+    // console.log(splitted[3])
+// 
+  }, [])
+
+  return(
 
   
   <Navbar bg="light" expand="lg">
@@ -13,7 +27,11 @@ export default (props) => (
 
     
     <Nav className="mr-auto">
-      <Nav.Link href='/'><Link activeClass="active" to="about" spy={true} smooth={true}>About</Link></Nav.Link>
+      {home ? 
+      <Nav.Link><Link activeClass="active" to="about" spy={true} smooth={true}>About</Link></Nav.Link>
+      :
+      <Nav.Link href='/'>About</Nav.Link>
+      }
       <NavDropdown title="Catalog" id="basic-nav-dropdown">
         <NavDropdown.Item href="/stones">Stones</NavDropdown.Item>
         <NavDropdown.Divider />
@@ -21,9 +39,14 @@ export default (props) => (
         <NavDropdown.Divider />
         <NavDropdown.Item href="/edges">Edges</NavDropdown.Item>
       </NavDropdown>
+      {home ? 
       <Nav.Link><Link activeClass="active" to="contact" spy={true} smooth={true}>Contact</Link></Nav.Link>
+      :
+      <Nav.Link href='/'>Contact</Nav.Link>
+     }
     </Nav>
     
   </Navbar.Collapse>
 </Navbar>
 )
+}
