@@ -5,9 +5,10 @@ import Cardsect from '../components/cardsect'
 import stoneStyle from './stones.module.css'
 import Stonetabs from '../components/stonetabs'
 import Image from 'react-bootstrap/Image'
-import {Row,Col, Tab, Nav} from 'react-bootstrap'
+// import {Row,Col, Tab, Nav} from 'react-bootstrap'
 import Artstone from '../components/artstone'
 import { Helmet } from 'react-helmet'
+import { Tab } from 'semantic-ui-react'
 
 
 
@@ -38,6 +39,13 @@ class Stones extends Component {
         })
          
     }
+    panes = [
+        { menuItem: 'Tab 1', render: () =>                             <Cardsect location="granitepics" list={this.state.graniteList}/>
+    },
+        { menuItem: 'Tab 2', render: () => <Tab.Pane>Tab 2 Content</Tab.Pane> },
+        { menuItem: 'Tab 3', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
+      ]
+      
     render() {
     
     
@@ -72,7 +80,9 @@ class Stones extends Component {
                     </Tab>
                     </Tabs>
                 </div> */}
-                <div className={stoneStyle.sect}>
+                  <Tab menu={{ fluid: true, vertical: true, tabular: true }} panes={this.panes} />
+
+                {/* <div className={stoneStyle.sect}>
                 <Tab.Container id="left-tabs-example" defaultActiveKey="granite">
                     <Row>
                         <Col sm={1}>
@@ -103,7 +113,7 @@ class Stones extends Component {
                         </Col>
                     </Row>
                     </Tab.Container>
-                </div>
+                </div> */}
                 {/* {this.state.showing == "granite" ?
                 :
                 null
