@@ -11,11 +11,13 @@ class StoneCard extends Component{
     }
     componentDidMount(){
         let width = window.screen.width
-        // console.log(width)
-        if (width < 500){
+        console.log(width)
+        if (width < 400){
+            this.setState({cardSize: 7})
+        } else if (width < 500){
             this.setState({cardSize: 12})
 
-        }
+        }  
     }
 
     nameDisplay = (name) =>{
@@ -65,9 +67,8 @@ class StoneCard extends Component{
     render(){
         return (
             <div className={stoneStyles.singleCard}>
-                <Card style={{ width: `${this.state.cardSize}rem` }}>
+                <Card style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={this.getPicture()} style={{width: "100%"}}/>
-
                     <Card.Body>
                     <Card.Title>{this.nameDisplay(this.props.name)}</Card.Title> 
                     </Card.Body>

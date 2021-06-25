@@ -50,7 +50,7 @@ class Stones extends Component {
         </Helmet>
                 <Header />
                 <div className={stoneStyle.sect}>
-                    <Image className={stoneStyle.pic} src={require('../images/artstone-stone.jpg')}/>
+                    <Image className={stoneStyle.pic} src={require('../images/artstone-stone.jpg')} fluid/>
                     <div className={stoneStyle.writing}>
                     <h1>Stones</h1>
                     </div>

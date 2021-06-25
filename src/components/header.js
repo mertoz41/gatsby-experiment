@@ -1,7 +1,7 @@
 import React from "react"
 import {Navbar, Nav, NavDropdown, Image } from 'react-bootstrap'
 import headerStyles from './header.module.css'
-
+import {Link} from 'react-scroll'
 
 export default (props) => (
 
@@ -13,7 +13,7 @@ export default (props) => (
 
     
     <Nav className="mr-auto">
-      <Nav.Link href="/about">About</Nav.Link>
+      <Nav.Link href='/'><Link activeClass="active" to="about" spy={true} smooth={true}>About</Link></Nav.Link>
       <NavDropdown title="Catalog" id="basic-nav-dropdown">
         <NavDropdown.Item href="/stones">Stones</NavDropdown.Item>
         <NavDropdown.Divider />
@@ -21,7 +21,7 @@ export default (props) => (
         <NavDropdown.Divider />
         <NavDropdown.Item href="/edges">Edges</NavDropdown.Item>
       </NavDropdown>
-      <Nav.Link href="/contact">Contact</Nav.Link>
+      <Nav.Link><Link activeClass="active" to="contact" spy={true} smooth={true}>Contact</Link></Nav.Link>
     </Nav>
     
   </Navbar.Collapse>

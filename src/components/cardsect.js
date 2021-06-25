@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import StoneCard from './stoneCard'
 import sectionStyle from './cardsect.module.css'
-
+import { Card, CardDeck } from 'react-bootstrap'
 export class Cardsect extends Component {
     render() {
         return (

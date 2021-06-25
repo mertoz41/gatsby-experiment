@@ -5,10 +5,13 @@ import Footer from '../components/footer'
 import PictureSlider from '../components/pictureslider'
 import homeStyles from './home.module.css'
 import 'semantic-ui-css/semantic.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import { Helmet } from 'react-helmet'
-
+import Image from 'react-bootstrap/Image'
+import { Container } from "react-bootstrap"
 
 const IndexPage = ({data}) => {
+  console.log(window.location.href)
   return(
     <div className={homeStyles.container}>
         <Helmet>
@@ -17,7 +20,28 @@ const IndexPage = ({data}) => {
           <meta name="description" content="Nested component" />
         </Helmet>
         <Header />
-        <PictureSlider />
+        <div className={homeStyles.sect}>
+          <Image className={homeStyles.pic} src={require('../images/theartstone.jpg')} />
+        </div>
+        <div className={homeStyles.writing} id="about">
+                        <h1>About</h1>
+        </div>
+        <div className={homeStyles.sect}>
+                    <Image className={homeStyles.pic} src={require('../images/artstone-fourth.jpg')}/>
+                    
+        </div>
+        <div className={homeStyles.writing} id="contact">
+                        <h1>Contact</h1>
+        </div>
+        <div className={homeStyles.sect}>
+            <Image className={homeStyles.pic} src={require('../images/artstone-fifth.jpg')}/>      
+        </div>
+
+        {/* <PictureSlider /> */}
+
+
+
+
         <Footer /> 
   </div>
 )
