@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { Helmet } from 'react-helmet'
 import Image from 'react-bootstrap/Image'
 import { Container } from "react-bootstrap"
+import { List } from 'semantic-ui-react'
 
 const IndexPage = ({data}) => {
   // console.log(window.location.href)
@@ -23,15 +24,40 @@ const IndexPage = ({data}) => {
         <div className={homeStyles.sect}>
           <Image className={homeStyles.pic} src={require('../images/theartstone.jpg')} />
         </div>
-        <div className={homeStyles.writing} id="about">
+        <Container className={homeStyles.writing} id="about">
+            <figure className="position-relative" >
+
+          
                         <h1>About</h1>
-        </div>
+                  <p>
+                    Established in the early 2000's, Artstone Marble & Granite offers commercial and residential services in measurement, fabrication, and installation of your preferred stone countertops along with sinks. All services are provided in the DMV area. 
+                  </p>
+            </figure>
+        </Container>
+
+
+
         <div className={homeStyles.sect}>
                     <Image className={homeStyles.pic} src={require('../images/artstone-fourth.jpg')}/>
                     
         </div>
         <div className={homeStyles.writing} id="contact">
+            <figure className="position-relative">
                         <h1>Contact</h1>
+            </figure>
+                        <div className={homeStyles.contact}>
+                <List>
+                    <List.Item icon='phone' content='(443) 743-6413'></List.Item>
+                    <List.Item icon='phone' content='(703) 371-0757' />
+
+                    <List.Item icon='marker' content='25358 Pleasant Valley Road Unit #100 Chantilly VA 20152' />
+                    <List.Item
+                    icon='mail'
+                    content={<a href='mailto:mehmet@theartstone.com'>mehmet@theartstone.com</a>}
+                    />
+                    
+                </List>
+                </div>
         </div>
         <div className={homeStyles.sect}>
             <Image className={homeStyles.pic} src={require('../images/artstone-fifth.jpg')}/>      
