@@ -8,11 +8,21 @@
     height: auto;
 }
 .contact{
-    background-color: red;
+    font-size: 25px;
+    text-align: left;
+    /* background-color: red; */
 }
 .sect{
     position: relative;
     height: 'auto';
+}
+.info{
+    position: relative;
+    flex-direction: row;
+    /* background-color: royalblue; */
+    /* align-items: center; */
+    margin: auto;
+    left: 250px;
 }
 .pic{
     width: 100%;
@@ -36,12 +46,24 @@
     text-align: center;
     top: 0px;
     border: 3px rebeccapurple;
-    font-size: 70px;
+    font-size: 50px;
     color: #2C0A28;
-    padding: 40px;
+    padding: 20px;
     text-decoration: underline;
 }
 .writing p{
     font-size: 30px;
     text-align: left;
+}
+
+@media screen and (max-width: 768px){
+    .info{
+        left: inherit;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .info{
+        left: inherit;
+    }
+    
 }

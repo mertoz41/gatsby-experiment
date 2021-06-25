@@ -41,24 +41,24 @@ const IndexPage = ({data}) => {
                     <Image className={homeStyles.pic} src={require('../images/artstone-fourth.jpg')}/>
                     
         </div>
-        <div className={homeStyles.writing} id="contact">
+        <Container className={homeStyles.writing} id="contact">
             <figure className="position-relative">
                         <h1>Contact</h1>
             </figure>
-                        <div className={homeStyles.contact}>
-                <List>
-                    <List.Item icon='phone' content='(443) 743-6413'></List.Item>
-                    <List.Item icon='phone' content='(703) 371-0757' />
+                    <Container className={homeStyles.info}>
+                <List >
+                    <List.Item className={homeStyles.contact} icon='phone' content='(443) 743-6413'></List.Item>
+                    <List.Item className={homeStyles.contact} icon='phone' content='(703) 371-0757' />
 
-                    <List.Item icon='marker' content='25358 Pleasant Valley Road Unit #100 Chantilly VA 20152' />
-                    <List.Item
+                    <List.Item className={homeStyles.contact} icon='marker' content='25358 Pleasant Valley Road Unit #100 Chantilly VA 20152' />
+                    <List.Item className={homeStyles.contact}
                     icon='mail'
                     content={<a href='mailto:mehmet@theartstone.com'>mehmet@theartstone.com</a>}
                     />
                     
                 </List>
-                </div>
-        </div>
+                </Container>
+        </Container>
         <div className={homeStyles.sect}>
             <Image className={homeStyles.pic} src={require('../images/artstone-fifth.jpg')}/>      
         </div>
