@@ -8,6 +8,10 @@
 .tab{
     width: 300px;
 }
+.tabName{
+    font-size: x-large;
+    color: #000;
+}
 
 .pic{
     width: 100%;
@@ -80,6 +84,13 @@
     text-align: left;
     font-size: 20px;
 
+
+}
+.tabs{
+    position: relative;
+    width: auto;
+    margin: auto;
+    top: 100;
 
 }
 

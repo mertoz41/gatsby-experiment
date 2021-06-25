@@ -6,7 +6,7 @@ import stoneStyle from './stones.module.css'
 import EdgeTabs from '../components/edgetabs'
 import Image from 'react-bootstrap/Image'
 import Artstone from '../components/artstone'
-
+import { Helmet } from 'react-helmet'
 
 
 
@@ -28,6 +28,11 @@ export class Edges extends Component {
     render() {
         return (
             <div className={stoneStyle.container}>
+                <Helmet>
+                <meta charSet="utf-8" />
+                    <title>Art Stone | Edges</title>
+                <meta name="description" content="Nested component" />
+        </Helmet>
                 <Header />
                 <div className={stoneStyle.sect}>
                     <Image className={stoneStyle.pic} src={require('../images/artstone-stone.jpg')}/>

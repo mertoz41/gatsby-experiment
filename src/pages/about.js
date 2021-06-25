@@ -5,7 +5,7 @@ import Image from 'react-bootstrap/Image'
 import stoneStyle from './stones.module.css'
 import Artstone from '../components/artstone'
 import homeStyles from './home.module.css'
-
+import {Helmet} from 'react-helmet'
 
 
 
@@ -13,6 +13,11 @@ class AboutPage extends Component {
     render() {
         return (
             <div className={stoneStyle.container}>
+                <Helmet>
+                <meta charSet="utf-8" />
+                    <title>Art Stone | </title>
+                <meta name="description" content="Nested component" />
+        </Helmet>
                 <Header /> 
                 <div className={stoneStyle.sect}>
                     <Image className={stoneStyle.pic} src={require('../images/artstone-fourth.jpg')}/>

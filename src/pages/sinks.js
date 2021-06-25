@@ -6,6 +6,7 @@ import stoneStyle from './stones.module.css'
 import Sinktabs from '../components/sinktabs'
 import Cardsect from '../components/cardsect'
 import Artstone from '../components/artstone'
+import { Helmet } from 'react-helmet'
 
 
 class Sinks extends Component {
@@ -41,6 +42,11 @@ class Sinks extends Component {
 
         return(
             <div>
+                <Helmet>
+                <meta charSet="utf-8" />
+                    <title>Art Stone | Sinks</title>
+                <meta name="description" content="Nested component" />
+        </Helmet>
                 <Header /> 
                 <div className={stoneStyle.sect}>
                 <Image className={stoneStyle.pic} src={require('../images/sink-stone.jpg')}/>

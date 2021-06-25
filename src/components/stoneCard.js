@@ -6,6 +6,17 @@ import {graphql} from 'gatsby'
 // 
 class StoneCard extends Component{
 
+    state = {
+        cardSize: null,
+    }
+    componentDidMount(){
+        let width = window.screen.width
+        // console.log(width)
+        if (width < 500){
+            this.setState({cardSize: 12})
+
+        }
+    }
 
     nameDisplay = (name) =>{
         // upper case the first letter
@@ -29,7 +40,7 @@ class StoneCard extends Component{
     }
 
     getPicture = () => {
-        console.log('experimenting')
+        // console.log('experimenting')
         let sinkDirectories = [
             "singlebowlpics",
             "apronpics",
@@ -54,7 +65,7 @@ class StoneCard extends Component{
     render(){
         return (
             <div className={stoneStyles.singleCard}>
-                <Card style={{ width: '18rem' }}>
+                <Card style={{ width: `${this.state.cardSize}rem` }}>
                     <Card.Img variant="top" src={this.getPicture()} style={{width: "100%"}}/>
 
                     <Card.Body>

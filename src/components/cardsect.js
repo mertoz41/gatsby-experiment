@@ -8,9 +8,9 @@ export class Cardsect extends Component {
             <div className={sectionStyle.container}>
                 {/* <StoneCard location={this.props.location} name='artstone-fifth.jpg'/> */}
 
-                {this.props.list.map(granite => {
+                {this.props.list.map((granite, i) => {
                     return(
-                        <StoneCard location={this.props.location} name={granite}/>
+                        <StoneCard location={this.props.location} name={granite} key={i}/>
                     )
                 })}
                 

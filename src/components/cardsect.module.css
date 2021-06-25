@@ -1,14 +1,14 @@
 .container {
     position: relative;
-    width: 55%;
-    height: 850px;
+    width: 100%;
+    height: auto;
     overflow: hidden;
     overflow-y: scroll;
-    top: 40px;
+    /* top: 40px; */
     border: 5px black;
     border-radius: 10px;
-    margin: 5% auto;
-    padding: 20px 0px;
+    margin: auto;
+    /* padding: 20px 0px; */
 
 }
 

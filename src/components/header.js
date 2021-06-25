@@ -7,7 +7,7 @@ export default (props) => (
 
   
   <Navbar bg="light" expand="lg">
-  <Navbar.Brand href="/home"><Image src={require('../images/artstonelogo.jpg')} style={{height: 50, width: 50}}/> Art Stone Marble & Granite</Navbar.Brand>
+  <Navbar.Brand href="/"><Image src={require('../images/artstonelogo.jpg')} style={{height: 50, width: 50}}/> Art Stone Marble & Granite</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
 
