@@ -13,7 +13,7 @@ const PictureSlider = () =>(
       
 
         {/* <div className={sliderStyles.slider}> */}
-        <Carousel fade>
+        {/* <Carousel fade>
             <Carousel.Item>
                 <Image fluid style={{maxHeight: window.screen.height, width: '100%'}} src={artstonepic} alt="First slide" />
                 <Carousel.Caption>
@@ -32,7 +32,7 @@ const PictureSlider = () =>(
                     <h3>Experiment label</h3>
                 </Carousel.Caption>
             </Carousel.Item>
-        </Carousel>
+        </Carousel> */}
         {/* </div> */}
 </Container>
 )

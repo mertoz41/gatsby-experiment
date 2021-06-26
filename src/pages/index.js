@@ -2,7 +2,6 @@ import React from "react"
 import {graphql} from 'gatsby'
 import Header from '../components/header'
 import Footer from '../components/footer'
-import PictureSlider from '../components/pictureslider'
 import homeStyles from './home.module.css'
 import 'semantic-ui-css/semantic.min.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -63,7 +62,6 @@ const IndexPage = ({data}) => {
             <Image className={homeStyles.pic} src={require('../images/artstone-fifth.jpg')}/>      
         </div>
 
-        {/* <PictureSlider /> */}
 
 
 

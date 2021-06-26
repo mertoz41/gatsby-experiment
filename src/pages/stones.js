@@ -5,10 +5,7 @@ import Cardsect from '../components/cardsect'
 import stoneStyle from './stones.module.css'
 import Stonetabs from '../components/stonetabs'
 import Image from 'react-bootstrap/Image'
-// import {Row,Col, Tab, Nav} from 'react-bootstrap'
-import Artstone from '../components/artstone'
 import { Helmet } from 'react-helmet'
-import { Tab } from 'semantic-ui-react'
 
 
 
@@ -76,14 +73,6 @@ class Stones extends Component {
                 :
                 null
                 }
-                
-            
-
-                {/* {this.state.list.map(granite => {
-                    return(
-                        <StoneCard name={granite}/>
-                    )
-                })} */}
 
                 <Footer />
             </div>
