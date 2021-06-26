@@ -16,7 +16,6 @@ class Stones extends Component {
         marbleList: [],
         quartzList: [],
         showing: "granite",
-        // key: 'granite'
     }
 
     componentDidMount(){

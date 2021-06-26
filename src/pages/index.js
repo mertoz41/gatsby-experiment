@@ -1,5 +1,4 @@
 import React from "react"
-import {graphql} from 'gatsby'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import homeStyles from './home.module.css'
@@ -10,7 +9,7 @@ import Image from 'react-bootstrap/Image'
 import { Container } from "react-bootstrap"
 import { List } from 'semantic-ui-react'
 
-const IndexPage = ({data}) => {
+const IndexPage = () => {
   // console.log(window.location.href)
   return(
     <div className={homeStyles.container}>
@@ -72,19 +71,3 @@ const IndexPage = ({data}) => {
   }
 
 export default IndexPage
-
-export const query = graphql`
-  query {
-    allImageSharp {
-      edges {
-        node {
-          id
-            fluid(maxWidth: 200, maxHeight: 200) {
-              ...GatsbyImageSharpFluid
-            }
-        }
-      }
-    }
-  }
-
-`
