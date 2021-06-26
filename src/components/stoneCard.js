@@ -66,14 +66,12 @@ class StoneCard extends Component{
     }
     render(){
         return (
-            <div className={stoneStyles.singleCard}>
-                <Card style={{ width: '18rem' }}>
+                <Card className={stoneStyles.singleCard}>
                     <Card.Img variant="top" src={this.getPicture()} style={{width: "100%"}}/>
                     <Card.Body>
                     <Card.Title>{this.nameDisplay(this.props.name)}</Card.Title> 
                     </Card.Body>
                 </Card>
-            </div>
         )
     }
     

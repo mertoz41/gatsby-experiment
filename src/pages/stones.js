@@ -18,7 +18,7 @@ class Stones extends Component {
         graniteList: [],
         marbleList: [],
         quartzList: [],
-        key: "granite",
+        showing: "granite",
         // key: 'granite'
     }
 
@@ -39,12 +39,7 @@ class Stones extends Component {
         })
          
     }
-    panes = [
-        { menuItem: 'Tab 1', render: () =>                             <Cardsect location="granitepics" list={this.state.graniteList}/>
-    },
-        { menuItem: 'Tab 2', render: () => <Tab.Pane>Tab 2 Content</Tab.Pane> },
-        { menuItem: 'Tab 3', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
-      ]
+    
       
     render() {
     
@@ -63,61 +58,14 @@ class Stones extends Component {
                     <h1>Stones</h1>
                     </div>
                 </div>
-                {/* <Stonetabs changeMenuItem={this.changeMenuItem} /> */}
-                {/* <div className={stoneStyle.tabs}>
-                <Tabs
-                    id="controlled-tab-example"
-                    activeKey={this.state.key}
-                    onSelect={(k) => this.setState({key: k})}
-                    >
-                    <Tab eventKey="granite" title="Granite">
-                    </Tab>
-                    <Tab eventKey="marble" title="Marble">
-                        <Sonnet />
-                    </Tab>
-                    <Tab eventKey="quartz" title="Quartz" >
-                        <Sonnet />
-                    </Tab>
-                    </Tabs>
-                </div> */}
-                  <Tab menu={{ fluid: true, vertical: true, tabular: true }} panes={this.panes} />
+                <Stonetabs changeMenuItem={this.changeMenuItem} />
+                
 
-                {/* <div className={stoneStyle.sect}>
-                <Tab.Container id="left-tabs-example" defaultActiveKey="granite">
-                    <Row>
-                        <Col sm={1}>
-                        <Nav variant="pills" className="flex-column">
-                            <Nav.Item>
-                            <Nav.Link eventKey="granite"><p className={stoneStyle.tabName}>Granite</p></Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                            <Nav.Link eventKey="marble"><p className={stoneStyle.tabName}>Marble</p></Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                            <Nav.Link eventKey="quartz"><p className={stoneStyle.tabName}>Quartz</p></Nav.Link>
-                            </Nav.Item>
-                        </Nav>
-                        </Col>
-                        <Col sm={15}>
-                        <Tab.Content>
-                            <Tab.Pane eventKey="granite">
-                            <Cardsect location="granitepics" list={this.state.graniteList}/>
-                            </Tab.Pane>
-                            <Tab.Pane eventKey="marble">
-                            <Cardsect location="marblepics" list={this.state.marbleList} />
-                            </Tab.Pane>
-                            <Tab.Pane eventKey="quartz">
-                            <Cardsect location="quartzpics" list={this.state.quartzList} />
-                            </Tab.Pane>
-                        </Tab.Content>
-                        </Col>
-                    </Row>
-                    </Tab.Container>
-                </div> */}
-                {/* {this.state.showing == "granite" ?
+                {this.state.showing == 'granite' ? 
+                <Cardsect location="granitepics" list={this.state.graniteList} />
                 :
                 null
-                } */}
+                }
                 {this.state.showing == "marble" ?
                 <Cardsect location="marblepics" list={this.state.marbleList} />
                 :
