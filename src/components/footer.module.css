@@ -4,7 +4,8 @@
     width: 100%;
     height: 100px;
     line-height: 60px;
-    background-image: linear-gradient(white, grey);
+    background-color: whitesmoke;
+    /* background-image: linear-gradient(white, grey); */
     text-align: center;
 }
 

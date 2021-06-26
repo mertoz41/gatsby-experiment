@@ -41,7 +41,7 @@ class Sinks extends Component {
     render(){
 
         return(
-            <div>
+            <div className={stoneStyle.container}>
                 <Helmet>
                 <meta charSet="utf-8" />
                     <title>Art Stone | Sinks</title>
