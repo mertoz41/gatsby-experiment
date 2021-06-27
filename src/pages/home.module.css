@@ -92,6 +92,48 @@
     flex-direction: row;
     justify-content: space-around;
 }
+@media screen and (max-width: 320px){
+    .onPic{
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .onPic h1{
+        font-size: 21px;
+    }
+    .onPic h3{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 375px){
+    .onPic{
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;        
+    }
+    .onPic h1{
+        font-size: 21px;
+    }
+    .onPic h3{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 414px){
+    .onPic{
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .onPic h1{
+        font-size: 21px;
+        text-align: right;
+    }
+    .onPic h3{
+        font-size: 18px;
+        text-align: right;
+    }
+}
+
 
 @media screen and (max-width: 768px){
     .info{
@@ -104,3 +146,4 @@
     }
     
 }
+

@@ -92,11 +92,6 @@ const IndexPage = () => {
                 </List>
                 </Container>
         </Container>
-
-
-
-
-
         <Footer /> 
   </div>
 )
