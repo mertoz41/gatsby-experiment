@@ -21,6 +21,11 @@ const IndexPage = () => {
         <Header />
         <div className={homeStyles.sect}>
           <Image className={homeStyles.pic} src={require('../images/theartstone.jpg')} />
+          <div className={homeStyles.onPic}>
+            <h1>20 Years of Excellence</h1>
+            <h3>Get a free estimate today</h3>
+          
+          </div>
         </div>
         <Container className={homeStyles.writing} id="about">
             <figure className="position-relative" >
@@ -28,16 +33,46 @@ const IndexPage = () => {
           
                         <h1>About</h1>
                   <p>
-                    Established in the early 2000's, Artstone Marble & Granite offers commercial and residential services in measurement, fabrication, and installation of your preferred stone countertops along with sinks. All services are provided in the DMV area. 
+                    Established in the early 2000's, Artstone Marble & Granite offers commercial and residential services in measurement, fabrication, and installation of your preferred stone countertops along with sinks. We have solutions and the knowledge to make your designs and ideas come to reality. All services are provided in the DMV area. 
                   </p>
             </figure>
         </Container>
+        
 
 
 
         <div className={homeStyles.sect}>
                     <Image className={homeStyles.pic} src={require('../images/artstone-fourth.jpg')}/>
                     
+        </div>
+        <Container className={homeStyles.writing} id="services">
+        <figure className="position-relative" >
+
+          
+        <h1>Services</h1>
+        <div className={homeStyles.services}>
+          <div className={homeStyles.service}>
+            <h3>Kitchen Countertops</h3>
+            <Image className={homeStyles.servicePic} src={require('../images/countertop.jpeg')} responsive/>
+
+          </div>
+          <div className={homeStyles.service}>
+            <h3>Bathroom Vanity Tops</h3>
+            <Image className={homeStyles.servicePic} src={require('../images/vanity.jpg')} responsive/>
+
+          </div>
+          <div className={homeStyles.service}>
+            <h3>Backsplashes</h3>
+            <Image className={homeStyles.servicePic} src={require('../images/backsplash.jpeg')} responsive/>
+
+          </div>
+        </div>
+          
+      </figure>
+        </Container>
+        
+        <div className={homeStyles.sect}>
+            <Image className={homeStyles.pic} src={require('../images/artstone-fifth.jpg')}/>      
         </div>
         <Container className={homeStyles.writing} id="contact">
             <figure className="position-relative">
@@ -57,9 +92,6 @@ const IndexPage = () => {
                 </List>
                 </Container>
         </Container>
-        <div className={homeStyles.sect}>
-            <Image className={homeStyles.pic} src={require('../images/artstone-fifth.jpg')}/>      
-        </div>
 
 
 

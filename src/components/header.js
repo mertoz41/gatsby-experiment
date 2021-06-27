@@ -44,6 +44,10 @@ export default (props) => {
       :
       <Nav.Link href='/'>Contact</Nav.Link>
      }
+     {home ? 
+     <Nav.Link><Link activeClass="active" to="services" spy={true} smooth={true}>Services</Link></Nav.Link>
+    :
+    <Nav.Link href="/">Services</Nav.Link>}
     </Nav>
     
   </Navbar.Collapse>

@@ -16,6 +16,12 @@
     position: relative;
     height: 'auto';
 }
+.service{
+    width: 30%;
+}
+.service h3{
+    text-align: center;
+}
 .info{
     position: relative;
     flex-direction: row;
@@ -26,8 +32,16 @@
 }
 .pic{
     width: 100%;
+    max-height: 800px;
     margin: auto;
     box-shadow: 5px 10px 18px #888888;
+    object-fit: cover;
+    display: block;
+}
+.servicePic{
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
 
 }
 .writing {
@@ -54,6 +68,29 @@
 .writing p{
     font-size: 30px;
     text-align: left;
+}
+.onPic {
+    position: absolute;
+    bottom: 100px;
+    /* right: 0px; */
+    margin-left: 50%;
+    margin-right: 50%;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: auto;
+    padding: 20px;
+}
+.onPic h1{
+    color: white;
+}
+.onPic h3{
+    color: white;
+}
+.services {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 @media screen and (max-width: 768px){
